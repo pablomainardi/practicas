@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Formulario de registro</h1>
+        <p id="description">Completa los datos para ingresar en nuestra base de datos.</p>
+        <form action="" id="survey-form">
+            <fieldset class="form-1">
+                <label id="name-label" for="name">Nombre Completo: </label>
+                <input class="nombre-input" placeholder="Tu nombre..." type="text" required id="name"><br>
+                <label id="email-label" for="email">Correo: </label>
+                <input class="nombre-input" placeholder="ejemplo@mipagina.com" type="email" required id="email"><br>
+                <label id="number-label" for="number">Edad: (Opcional) </label>
+                <input class="nombre-input" min="18" max="120" placeholder="Tu edad en números..." type="number" id="number">
+            </fieldset>
+            <br>
+            <fieldset class="form-2">
+                <label for="dropdown">Tiene experiencia en el manejo de datos?</label><br>
+                <select name="exp-pre" id="dropdown">
+                    <option value="1">Si, algo de conocimientos tengo.</option>
+                    <option value="0">No, es la primera vez.</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset class="form-3">
+                <p>Si te interesa podriamos enviarte novedades periodicamente</p><br>
+                <label for="rad-but-1">Quiero recibir novedades</label>
+                <input id="rad-but-1" value="r-1" name="rad-but" type="radio"><br>
+                <label for="rad-but-2">Prefiero NO recibir novedades</label>
+                <input id="rad-but-2" value="r-2" name="rad-but" type="radio">
+            </fieldset>
+            <br>
+            <fieldset class="form-4">
+                <p>Como has llegado a nosotros?</p><br>
+                <label for="chk-but-1">Recomendacion de un conocido</label>
+                <input id="chk-but-1" value="ck-1" name="ck-1" type="checkbox"><br>
+                <label for="chk-but-2">Publicidad en television</label>
+                <input id="chk-but-2" value="ck-2" name="ck-2" type="checkbox"><br>
+                <label for="chk-but-3">Redes sociales</label>
+                <input id="chk-but-3" value="ck-3" name="ck-3" type="checkbox"><br>
+                <label for="chk-but-4">Otro/s</label>
+                <input id="chk-but-4" value="ck-4" name="ck-4" type="checkbox"><br>
+            </fieldset>    
+            <br>
+            <fieldset class="form-5">
+                <label for="txt-area">Comentarios</label><br>
+                <textarea name="txt-area" id="txt-area" cols="40" rows="7"></textarea>
+            </fieldset><br>
+            
+            <button id="submit" type="submit">Submit</button>
+            </form>
+    </div>
+    
+</body>
+
+</html>
