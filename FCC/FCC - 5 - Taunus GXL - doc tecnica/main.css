@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+#main-doc {
+    position: absolute;
+    margin-left: 290px;
+  
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background-color: #353;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid 2px #222;
+    margin: auto 10px;
+
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: #9a9;
+    font-size: 25px;
+    margin:10px auto;
+    padding: 8px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #464;
+    color: #fff;
+}
+
+
+
+h2 {
+    font-size: 30px;
+  border: 2px solid #222;
+  padding: 5px;
+  border-bottom: none ;
+  border-right: none;
+}
+
+.datos_tec {
+    display: flex;
+    justify-content: center;
+}
+
+.puntaje {
+text-align: center;
+}
+
+.datos {
+    width: 50%;
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+}
+
+
+@media (max-width: 800px) {
+  
+    #navbar {
+      width: 230px;
+      overflow: auto;
+
+    }
+
+    #main-doc {
+        margin-left: 240px;
+    }
+  
+    .nav-link {
+        font-size: 20px;
+        margin:8px auto;
+        padding: 7px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 23px;
+        padding: 1px;
+    }
+  
+    
+  }
