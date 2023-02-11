@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Platerros</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo-title">
+            <h1>Platerros</h1>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#info">INFO</a></li>
+                <li><a class="nav-link" href="#usan">USO</a></li>
+                <li><a class="nav-link" href="#precio">PRECIOS</a></li>
+            </ul>
+        </nav>
+
+        <img width="129px" src="logo.jpg" alt="Logo, perro comiendo en una mesa" id="header-img">
+
+    </header>
+    <main class="container">
+        <div id="info" class="espaciador"></div>
+        <div class="presentacion">
+            <div class="img-info">
+                <img src="info.png" alt="informacion sobre las diferencias de los platos">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="info">
+                <div class="info-txt">
+                    <p>Somos fabricantes de platos para mascotas hace mas de 15 años!</p>
+                </div>
+                <div class="info-txt">
+                    <p>Contamos con una gran variedad de modelos y precios</p>
+                </div>
+                <div class="info-txt">
+                    <p>Tenemos ofertas semanales y descuentos por cantidad!</p>
+                </div>
+                <div class="info-txt">
+                    <p>Ten en cuenta las sugerencias antes de elegir tu plato</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="usan" class="espaciador"></div>
+        <div class="box-video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ZO6Mix0tIcQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="espaciador" id="precio"></div>
+        <div class="box-producto">
+            <div class="producto">
+                <h3 class="producto-titulo">Basico</h3>
+                <div class="marco-img">
+                    <img src="basico1.webp" alt="plato de metal">
+                </div>
+                <ul>
+                    <li>Diámetro: 26 cm</li>
+                    <li>Largo x Ancho x Altura: 26 cm x 20 cm x 6 cm</li>
+                    <li>Tipo de producto: Bebedero/Comedero</li>
+                    <li>Material: Acero inoxidable</li>
+                    <li>Es plegable: No</li>
+                    <li>Es antideslizante: Sí</li>
+                    <li>Es automático: No</li>
+                    <li>Es doble: No</li>
+                    <li>Con temporizador: No</li>
+                    <li>Con conexión Wi-Fi: No</li>
+                    <li>Con batería recargable: No</li>
+                    <li>Requiere pilas: No</li>
+                </ul>
+                <br>
+                <br>
+
+                <br>
+                <br>
+                <div class="precio-producto"><b>$ 2500</b></div>
+                <br>
+                <input type="button" value="Comprar" name="comprar" class="btn-comprar">
+            </div>
+            <div class="producto">
+                <h3 class="producto-titulo">Pro</h3>
+                <div class="marco-img">
+                    <img src="pro1.webp" alt="plato de metal en altura">
+                </div>
+                <ul>
+                    <li>Diámetro: 15 cm</li>
+                    <li>Largo x Ancho x Altura: 25 cm x 20 cm x 13 cm</li>
+                    <li>Tipo de producto: Bebedero/Comedero</li>
+                    <li>Material: Madera</li>
+                    <li>Es plegable: No</li>
+                    <li>Es antiahogo: Sí</li>
+                    <li>Es antideslizante: No</li>
+                    <li>Es automático: No</li>
+                    <li>Es doble: No</li>
+                    <li>Es elevado: Sí</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="precio-producto"><b>$ 8500</b></div>
+                <br>
+                <input type="button" value="Comprar" name="comprar" class="btn-comprar">
+            </div>
+            <div class="producto">
+                <h3 class="producto-titulo">Supremo</h3>
+                <div class="marco-img">
+                    <img src="supremo2.webp" alt="plato de ceramica y madera">
+                </div>
+                <ul>
+                    <li>Diámetro: 16 cm</li>
+                    <li>Largo x Ancho x Altura: 37 cm x 20 cm x 6.5 cm</li>
+                    <li>Tipo de producto: Bebedero/Comedero</li>
+                    <li>Material: Cerámica-Madera</li>
+                    <li>Es plegable: No</li>
+                    <li>Es antiahogo: No</li>
+                    <li>Es antideslizante: No</li>
+                    <li>Es automático: No</li>
+                    <li>Es doble: No</li>
+                </ul>
+                <br>
+                <div class="precio-producto"><b>$ 14500</b></div>
+                <br>
+                <input type="button" value="Comprar" name="comprar" class="btn-comprar">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="logo-img">
+                <img width="129px" src="logo.jpg" alt="Logo, perro comiendo en una mesa" id="header-img">
+            </div>
+            <div class="formulario">
+                <p>Si quieres recibir un correo con nuestras ofertas, suscribe tu mail!</p>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" name="email" id="email" placeholder="Ingrese su mail aqui" required>
+                    <input type="submit" value="Enviar" id="submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="firma">
+            Derechos reservados 2023 - Platerros sa
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

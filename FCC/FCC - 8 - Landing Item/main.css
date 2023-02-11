@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-image: url(fondo-variado.webp);
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 130px;
+    width: 100%;
+    justify-content: space-between;
+    place-items: center;
+    z-index: 5;
+    background-image: linear-gradient(rgba(255, 50, 30, 0.2), rgba(255, 50, 30, 0.2)), url(fondo.jpg);
+    background-repeat: repeat;
+    border: 3px solid #c11;
+}
+
+.logo-title h1 {
+    margin: auto 5px;
+    font-size: 70px;
+    color: #c11;
+    width: 50%;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    text-shadow: #000 5px 5px 10px;
+}
+
+#nav-bar {
+    width: 50%;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#nav-bar ul li {
+    width: 110px;
+    padding: 5px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c11;
+    text-shadow: #000 5px 5px 10px, #000 5px 5px 10px;
+}
+
+.nav-link:hover {
+    font-weight: bolder;
+    color: #f11;
+}
+.container {
+    position: relative;
+    top: 140px;
+    width: 100%;
+}
+
+.img-info img {
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: #111 0px 0px 20px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info-txt {
+    display: flex;
+    width: 280px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: #111 0px 0px 20px;
+    border: 2px solid #111;
+    background: linear-gradient(#c11,
+            #811 100%);
+}
+
+.info-txt p {
+    padding: 10px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.info-txt p::first-letter {
+    font-size: 40px;
+
+}
+
+hr {
+    width: 70%;
+    border: 2px solid #888;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.box-video {
+    margin: auto;
+    border-radius: 20px;
+}
+
+.box-producto {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.producto {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ccc;
+}
+
+.producto-titulo {
+    padding: 10px 5px;
+    font-size: 35px;
+}
+
+.marco-img img {
+    width: 385px;
+    height: 100%;
+    transition: .7s;
+}
+
+.marco-img img:hover {
+    transform: scale(1.6);
+    transition: .7s;
+}
+
+.producto ul {
+    background-color: #ddd;
+}
+
+.producto ul li {
+    text-align: start;
+    margin-left: 30px;
+
+    font-size: 19px;
+}
+
+.precio-producto b {
+    font-size: 40px;
+    text-shadow: #2f2 0px 0px 20px;
+    color: #222;
+    text-align: end;
+
+}
+
+.btn-comprar {
+    width: 45%;
+    font-size: 25px;
+    background-color: #aaa;
+    border-radius: 15%;
+    border: none;
+    padding: 7px 10px;
+    box-shadow: #2f2 0px 0px 20px;
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+footer {
+    position: relative;
+    top: 140px;
+    width: 100%;
+    background: linear-gradient(rgba(255, 50, 30, 0.2), rgba(255, 50, 30, 0.2));
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #ccc;
+    font-size: 22px;
+    height: max-content;
+    width: 350px;
+
+
+}
+
+.firma {
+    background-color: #ccc;
+}
+
+#header-img {
+    border-radius: 100%;
+    margin-right: 100px;
+}
+
+.espaciador {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+@media (max-width: 762px) {
+
+    h1,
+    p,
+    .precio-producto {
+        font-size: calc(100% - 25%);
+    }
+
+    .nav-link,
+    .btn-comprar {
+        font-size: calc(100% - 10%);
+    }
+
+    .precio-producto b {
+        font-size: 29px;
+    }
+
+    .info-txt {
+        width: 280px;
+        height: 200px;
+
+        border-radius: 20px;
+        box-shadow: #111 0px 0px 20px;
+        border: 2px solid #111;
+        background: linear-gradient(#c11,
+                #811 100%);
+    }
+
+    .info-txt p {
+        padding: 7px;
+        margin: auto;
+        font-size: 19px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .info-txt p::first-letter {
+        font-size: 30px;
+
+    }
+
+
+}
